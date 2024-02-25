@@ -8,7 +8,7 @@ class Solution:
         
         while i < n:
             c = 1
-            print(chars[i])
+            #print(chars[i])
             while i < n-1 and chars[i] == chars[i+1]:
                 c += 1
                 i += 1
