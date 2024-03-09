@@ -8,13 +8,13 @@ class Solution:
         
         i=0
         l=k
-        print(nums[i:l])
+        # print(nums[i:l])
         summ = sum(nums[i:l])
         currsum = summ
-        print(1+12-5-6)
+        # print(1+12-5-6)
         
         while(l < len(nums)):
-            print(currsum,currsum/k)
+            # print(currsum,currsum/k)
             currsum = currsum + nums[l] - nums [i]
             i += 1
             l += 1
