@@ -17,7 +17,7 @@ class Solution:
             # print(cur +node.val)
             if cur + node.val == targetSum:
                 self.total += 1
-                print('hello')
+                # print('hello')
             
         def dfs(node):
             # print('hi')
