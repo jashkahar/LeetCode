@@ -14,11 +14,11 @@ class Solution:
 #             elif nums[i] in seen:
 #                 nums[i] = float('inf')
 #                 nums.sort()
-#                 print(nums)
+#                 # print(nums)
 #             else:
-#                 print(nums)
+#                 # print(nums)
 #                 nums.sort()
 #                 return i
-#         return 0
+#         return len(seen)
         
         
