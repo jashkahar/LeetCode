@@ -1,9 +1,5 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        #print(len(s))
-        #print(10**4)
-        if (len(s) >= 10**4):
-            return False
         temp_list = list(s)
         
         stack = []
