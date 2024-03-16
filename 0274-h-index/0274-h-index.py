@@ -9,7 +9,7 @@ class Solution:
             else:
                 tmp[v] += 1
         total = 0    
-        print(tmp)
+        # print(tmp)
         for i in range(n,-1,-1):
             total += tmp[i]
             if total >= i:
