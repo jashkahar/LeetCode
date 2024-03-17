@@ -2,8 +2,9 @@ class RandomizedSet:
 
     def __init__(self):
         self.numMap = {}
-        self.numList = []
-
+        self.numList= []
+        
+        
     def insert(self, val: int) -> bool:
         res = val not in self.numMap
         if res:
@@ -22,8 +23,6 @@ class RandomizedSet:
             del self.numMap[val]
         return res
             
-        
-
     def getRandom(self) -> int:
         return random.choice(self.numList)
         
