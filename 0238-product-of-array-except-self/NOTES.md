@@ -1,18 +1,7 @@
-```
-prefix = 1
-postfix = 1
-res = [1]*len(nums)
-#print(res)
-for i in range(len(nums)):
-res[i] = prefix
-prefix = prefix * nums[i]
-#print(res)
-#print("")
-for i in range(len(nums)-1,-1,-1):
-res[i] = res[i] * postfix
-#   print(res)
-postfix = postfix * nums[i]
-#  print(postfix)
-# print("")
-return(res)
-```
+A simpler approach would be to use 2 lists `prefix` and `postfix`.
+​
+with `1` in the 0th place, iterate the nums list and store the product of each with the previous prefix and append it to `prefix`.
+​
+then iterate the nums list in reverse and get the product of the position and the postfix and append it to `postfix`.
+​
+now simply just multiply the prefix and postfix for each positions to get the result.
