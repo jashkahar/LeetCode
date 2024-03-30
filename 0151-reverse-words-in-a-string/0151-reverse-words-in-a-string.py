@@ -12,20 +12,20 @@ class Solution:
             # if i=='':
                 # print('blank space')
             if(i=='' and word == 0 and space == 0):
-                print('Blank space not needed', word, space)
+                # print('Blank space not needed', word, space)
                 word=0
                 space=1
             elif(i=='' and word == 0 and space == 1):
-                print('Blank space not needed', word, space)
+                # print('Blank space not needed', word, space)
                 word = 0
                 space=1
             elif(i=='' and word == 1 and space == 0):
-                print('Blank space not needed', word, space)
+                # print('Blank space not needed', word, space)
                 # rev.append(i)
                 word = 0
                 
             else:
-                print(i,' -->word', word, space)
+                # print(i,' -->word', word, space)
                 rev.append(i)
                 word=1
                 space=0
