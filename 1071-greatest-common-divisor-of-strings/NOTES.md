@@ -1,1 +1,1 @@
-​
+A greedy approach to solve this question would be to try the factors of the smallest string and building both string using that candidate.
