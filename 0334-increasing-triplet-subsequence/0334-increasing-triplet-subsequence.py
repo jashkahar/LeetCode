@@ -1,5 +1,5 @@
 class Solution:
-    def increasingTriplet(self, nums: List[int]) -> bool:  
+    def increasingTriplet(self, nums: List[int]) -> bool:          
         n = len(nums)
         
         if n < 3:
@@ -23,7 +23,6 @@ class Solution:
             if(leftmin[i] < nums[i] and nums[i] < rightmax[i]):
                 return True
         return False
-
         
 #         mini = min(nums)
 #         maxi = max(nums)
