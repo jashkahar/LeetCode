@@ -1,13 +1,13 @@
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         # O(1) space solution using boyer moore algorithm
-#         res, count = 0,0
+        res, count = 0,0
         
-#         for n in nums:
-#             if count == 0:
-#                 res = n
-#             count += (1 if n == res else -1)
-#         return res
+        for n in nums:
+            if count == 0:
+                res = n
+            count += (1 if n == res else -1)
+        return res
 
 
         
@@ -24,5 +24,5 @@ class Solution:
 
 
 #       ----Fancy hashmap colution ----
-        return list(dict(sorted(dict(Counter(nums)).items(), key = lambda x: x[1], reverse = True )))[0]
+        # return list(dict(sorted(dict(Counter(nums)).items(), key = lambda x: x[1], reverse = True )))[0]
         
