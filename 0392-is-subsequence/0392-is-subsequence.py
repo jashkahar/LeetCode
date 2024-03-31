@@ -15,10 +15,10 @@ class Solution:
             return False
         
         while j< m:
-            print("searching", ls[i])
-            print("current j:", lt[j])
+            # print("searching", ls[i])
+            # print("current j:", lt[j])
             if ls[i] == lt[j]:
-                print("Found")
+                # print("Found")
                 i += 1
                 j += 1
                 if i == n:
@@ -26,23 +26,5 @@ class Solution:
             else:
                 j += 1
         return False
-
-        
-        
-        
-            
-        
-        
-        
-#         newt = set(t)
-#         news = list(s)
-        
-#         for i in news:
-#             if i in newt:
-#                 pass
-#             else:
-#                 return False
-            
-#         return True
         
         
