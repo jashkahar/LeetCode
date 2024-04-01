@@ -5,9 +5,10 @@ class Solution:
         for num in nums:
             if num not in seen:
                 seen.add(num)
-                # print(seen)
             else:
                 return True
         return False
+    
+    #sort and use 2 pointers for O(1) space
                 
         
