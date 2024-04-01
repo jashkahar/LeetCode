@@ -15,7 +15,7 @@ class Solution:
             i+=1
             sign = -1
             
-        parsed = 0
+        parsed = ''
         
         while i < len(s):
             cur = s[i]
@@ -23,10 +23,13 @@ class Solution:
             if not cur.isdigit():
                 break
             else:
-                parsed = parsed * 10 + int(cur)
+                parsed = parsed + cur
             i += 1
             
-        parsed*=sign
+        if parsed != '':
+            parsed = int(parsed) * sign
+        else:
+            parsed = 0
         
         if parsed > 2**31-1:
             return 2**31-1
