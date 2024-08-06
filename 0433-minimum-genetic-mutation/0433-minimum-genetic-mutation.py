@@ -14,7 +14,7 @@ class Solution:
                     return mutations
                 
                 for i in range(len(gene)):
-                    for c in {"A", "C", "G", "T"}:
+                    for c in {"A", "G", "T"}:
                         mutated = gene[:i] + c + gene[i+1:]
                         if mutated in bankSet:
                             queue.append(mutated)
