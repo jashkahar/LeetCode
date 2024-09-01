@@ -1,6 +1,5 @@
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
-
         res = []
 
         def backtrack(start, comb):
@@ -13,4 +12,3 @@ class Solution:
                 comb.pop()
         backtrack(1, [])
         return res
-        
