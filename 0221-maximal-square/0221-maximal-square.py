@@ -13,9 +13,9 @@ class Solution:
                     if r+1 >= rows or c+1 >= cols:
                         matrix[r][c] = 1
                     else:
-                        matrix[r][c] = (1+ min(int(matrix[r+1][c]),
-                                        int(matrix[r+1][c+1]),
-                                        int(matrix[r][c+1])))
+                        matrix[r][c] = (1 + min(int(matrix[r+1][c]),
+                                                int(matrix[r+1][c+1]),
+                                                int(matrix[r][c+1])))
                 cur_max = max(cur_max, matrix[r][c])
         return cur_max**2
         
