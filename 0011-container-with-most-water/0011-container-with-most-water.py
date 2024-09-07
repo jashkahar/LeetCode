@@ -5,7 +5,7 @@ class Solution:
         right = len(height)-1
         maxx = 0
         while(left<right):
-            currmax = (min(height[left],height[right]) * abs(right - left))
+            currmax = (min(height[left],height[right]) * (right - left))
             
             if(maxx<currmax):
                 maxx = currmax
