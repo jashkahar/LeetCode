@@ -1,8 +1,7 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        MIN = -2**31 //10 #-2147483648
-        MAX = 2**31-1 //10 #2147483647
-
+        MIN = -2**31 #-2147483648
+        MAX = 2**31-1 #2147483647
 
         res = 0
 
@@ -10,11 +9,11 @@ class Solution:
             digit = int(math.fmod(x, 10))
             x = int(x/10)
 
-            if (res > MAX or 
-               (res == MAX and digit >= 7)):
+            if (res > MAX // 10 or 
+               (res == MAX // 10 and digit >= MAX % 10)):
                 return 0
-            if (res < MIN or 
-               (res == MIN and digit <= 8)):
+            if (res < MIN // 10 or 
+               (res == MIN // 10 and digit <= MIN % 10)):
                 return 0
             res = (res * 10) + digit
         return res
