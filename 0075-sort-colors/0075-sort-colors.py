@@ -8,9 +8,9 @@ class Solution:
         i = 0
 
         def swap(a,b):
-            tmp = nums[a]
-            nums[a] = nums[b]
-            nums[b] = tmp
+            # tmp = nums[a]
+            nums[a], nums[b] = nums[b], nums[a]
+            # nums[b] = tmp
 
 
         while i <=r:
