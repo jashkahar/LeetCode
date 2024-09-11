@@ -7,18 +7,13 @@ class Solution:
 
         i = 0
 
-        def swap(a,b):
-            # tmp = nums[a]
-            nums[a], nums[b] = nums[b], nums[a]
-            # nums[b] = tmp
-
 
         while i <=r:
             if nums[i] == 0:
-                swap(l,i)
+                nums[l], nums[i] = nums[i], nums[l]
                 l+=1
             elif nums[i] == 2:
-                swap(i, r)
+                nums[i], nums[r] = nums[r], nums[i]
                 r -=1 
                 i-=1
             i+=1
